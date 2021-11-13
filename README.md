@@ -15,7 +15,7 @@ requirements for compiling his tenants' information.
   ![Form Component](/readme-imgs/form-component.png)
 
 - All tenants displayed to the user on the home screen.
-- Edit and delete existing tenants from the database.
+- Edit and delete existing tenants from the database, email individual tenants about upcoming payments.
   ![Tenants Component](/readme-imgs/tenants-component.png)
 
 - Send out memos to all tenants regarding upcoming events, inspections, etc.
