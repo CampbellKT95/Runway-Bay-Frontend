@@ -1,0 +1,89 @@
+.tenant {
+  width: 80%;
+  background-color: white;
+
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 2px black;
+}
+
+.tenant-name {
+  font-family: Merriweather, serif;
+  font-size: 2rem;
+  padding-top: 20px;
+}
+
+.rent {
+  font-family: Merriweather, serif;
+  font-size: 1.5rem;
+}
+
+.property-building {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  margin-right: 0;
+  font-size: 1.25rem;
+}
+
+.property-unit {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 1.25rem;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.lease-file {
+  color: #cc5577;
+  width: 80%;
+  height: 50%;
+  margin-left: 20%;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tenant-btn {
+  width: 5rem;
+  height: auto;
+  margin: auto;
+  margin-bottom: 20px;
+
+  color: #cc5577;
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+}
+
+.icons {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.modal-container {
+  display: grid;
+}
+
+.modal-email-address {
+  margin: auto auto 1rem auto;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.modal-email-message {
+  border: 3px solid black;
+}
+
+.modal-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  width: 5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0.75rem auto 1rem auto;
+}

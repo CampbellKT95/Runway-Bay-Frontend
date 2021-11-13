@@ -1,0 +1,308 @@
+body {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 15rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+textarea {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  border: none;
+}
+
+.create-title {
+  font-family: merriweather, serif;
+  font-size: 2.2rem;
+}
+
+.all-tenants-btn {
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 0.55fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.2fr;
+  grid-gap: 10px;
+
+  margin-top: 3%;
+}
+
+.upload-create {
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.btn {
+  display: inline-block;
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+
+  grid-row: 2;
+  margin: auto;
+  font-size: 1.5rem;
+
+  cursor: pointer;
+}
+
+.file {
+  display: inline-block;
+  grid-row: 1;
+}
+
+.personal-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.1fr);
+  margin: auto;
+
+  grid-row: 1;
+  grid-gap: 5px;
+}
+
+.personal-info input {
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.name-label {
+  position: absolute;
+  margin-left: 12rem;
+}
+
+.company-label {
+  position: absolute;
+  margin-top: 3.5rem;
+  margin-left: 10.5rem;
+}
+
+.phone-label {
+  position: absolute;
+  margin-top: 7rem;
+  margin-left: 12rem;
+}
+
+.cell-label {
+  position: absolute;
+  margin-top: 10.5rem;
+  margin-left: 13rem;
+}
+
+.email-label {
+  position: absolute;
+  margin-top: 14rem;
+  margin-left: 12rem;
+}
+
+.address-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 0.1fr);
+  grid-column: 2;
+  grid-row: 1;
+  grid-gap: 5px;
+  margin: auto;
+  margin-top: 0;
+}
+
+.address-info input {
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.address-1-label {
+  position: absolute;
+  margin-left: 10.5rem;
+}
+
+.address-2-label {
+  position: absolute;
+  margin-left: 26rem;
+}
+
+.city-label {
+  position: absolute;
+  margin-left: 13rem;
+  margin-top: 3.5rem;
+}
+
+.state-label {
+  position: absolute;
+  margin-left: 28rem;
+  margin-top: 3.5rem;
+}
+
+.zip-label {
+  position: absolute;
+  margin-left: 13.3rem;
+  margin-top: 7rem;
+}
+
+.building-label {
+  position: absolute;
+  margin-left: 26.5rem;
+  margin-top: 7rem;
+}
+
+.unit-label {
+  position: absolute;
+  margin-left: 12.5rem;
+  margin-top: 10.5rem;
+}
+
+.lease-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 0.1fr);
+  margin: auto;
+  grid-column: 3;
+  grid-row: 1;
+  grid-gap: 5px;
+}
+
+.lease-info input {
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.start-date-label {
+  position: absolute;
+  margin-left: 10rem;
+}
+
+.end-date-label {
+  position: absolute;
+  margin-left: 26rem;
+}
+
+.lease-length-label {
+  position: absolute;
+  margin-left: 8.5rem;
+  margin-top: 3.5rem;
+}
+
+.signing-date-label {
+  position: absolute;
+  margin-left: 24.8rem;
+  margin-top: 3.5rem;
+}
+
+.signing-payment-label {
+  position: absolute;
+  margin-left: 7.5rem;
+  margin-top: 7rem;
+}
+
+.rent-due-label {
+  position: absolute;
+  margin-left: 25.8rem;
+  margin-top: 7rem;
+}
+
+.monthly-amt-label {
+  position: absolute;
+  margin-left: 6.8rem;
+  margin-top: 10.5rem;
+}
+
+.sales-tax-label {
+  position: absolute;
+  margin-left: 25.5rem;
+  margin-top: 10.5rem;
+}
+
+.subtotal-label {
+  position: absolute;
+  margin-left: 11rem;
+  margin-top: 14rem;
+}
+
+.total-paid-label {
+  position: absolute;
+  margin-left: 26rem;
+  margin-top: 14rem;
+}
+
+.deposit-info {
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-column: 3;
+  grid-row: 2;
+  grid-gap: 2px;
+}
+
+.deposit-shadow {
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.security-amount-label {
+  position: absolute;
+  margin-left: 10.5rem;
+}
+
+.date-security-received-label {
+  position: absolute;
+  margin-left: 22.5rem;
+  margin-top: -6px;
+}
+
+.deposit-info label {
+  font-size: 1.25rem;
+}
+
+.comment-section {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.comments {
+  border-radius: 5px;
+  font-size: 1.5rem;
+  box-shadow: 1px 1px 2px 2px black;
+}
+
+.comments-label {
+  position: absolute;
+  margin-left: 17rem;
+}
+
+.subtotal {
+  font-size: 1.5rem;
+  margin: 15px 0 0 0;
+}
+
+.security-check {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.last-check {
+  grid-column: 2;
+  grid-row: 2;
+  margin-right: 14%;
+}
+
+.liability-check {
+  grid-column: 1;
+  grid-row: 3;
+}
