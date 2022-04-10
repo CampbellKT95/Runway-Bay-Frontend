@@ -243,10 +243,10 @@ const Form = ({currentId, setCurrentId}) => {
                 <div className="security-check">
                     <input type="checkbox" name="security-deposit"
                     
-                    checked={tenantData.lease_details.security.security_received ? "true" : false}
+                    checked={tenantData.lease_details.security.security_received ? true : false}
 
                     value={tenantData.lease_details.security.security_received}
-                    onChange={(e) => {setTenantData({...tenantData, lease_details: {...tenantData.lease_details, security: {...tenantData.lease_details.security, security_received: true}}})}}/>
+                    onChange={(e) => {setTenantData({...tenantData, lease_details: {...tenantData.lease_details, security: {...tenantData.lease_details.security, security_received: !tenantData.lease_details.certificate_liability}}})}}/>
                     <label for="security-deposit">Deposit</label>
                 </div>
 
@@ -256,16 +256,16 @@ const Form = ({currentId, setCurrentId}) => {
                     checked={tenantData.lease_details.last_month_security ? "true" : false}
 
                     value={tenantData.lease_details.last_month_security}
-                    onChange={(e) => {setTenantData({...tenantData, lease_details: {...tenantData.lease_details, last_month_security: true}})}}/>
+                    onChange={(e) => {setTenantData({...tenantData, lease_details: {...tenantData.lease_details, last_month_security: !tenantData.lease_details.certificate_liability}})}}/>
                     <label for="last-month">Last Month's</label>
                 </div>
 
                 <div className="liability-check">
                     <input type="checkbox" name="certificate-of-liability" value={tenantData.lease_details.certificate_liability}
 
-                    checked={tenantData.lease_details.certificate_liability ? "true" : false}
+                    checked={tenantData.lease_details.certificate_liability ? true: false}
 
-                    onChange={(e) => {setTenantData({...tenantData, lease_details: {...tenantData.lease_details, certificate_liability: true}})}}/>
+                    onChange={(e) => {setTenantData({...tenantData, lease_details: {...tenantData.lease_details, certificate_liability: !tenantData.lease_details.certificate_liability}})}}/>
 
                     <label for="certificate-of-liability">Certificate of Liability</label>
                 </div>
